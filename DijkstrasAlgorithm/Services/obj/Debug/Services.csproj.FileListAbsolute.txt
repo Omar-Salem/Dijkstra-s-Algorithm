@@ -1,0 +1,14 @@
+D:\My Projects\DijkstrasAlgorithm\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+D:\My Projects\DijkstrasAlgorithm\Services\bin\Debug\Services.dll
+D:\My Projects\DijkstrasAlgorithm\Services\bin\Debug\Services.pdb
+D:\My Projects\DijkstrasAlgorithm\Services\bin\Debug\Entities.dll
+D:\My Projects\DijkstrasAlgorithm\Services\bin\Debug\Entities.pdb
+D:\My Projects\DijkstrasAlgorithm\Services\obj\Debug\Services.dll
+D:\My Projects\DijkstrasAlgorithm\Services\obj\Debug\Services.pdb
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\Services\bin\Debug\Services.dll
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\Services\bin\Debug\Services.pdb
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\Services\bin\Debug\Entities.dll
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\Services\bin\Debug\Entities.pdb
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\Services\obj\Debug\Services.dll
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\Services\obj\Debug\Services.pdb

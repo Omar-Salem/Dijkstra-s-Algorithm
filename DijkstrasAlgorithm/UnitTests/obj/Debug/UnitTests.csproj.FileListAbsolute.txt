@@ -1,0 +1,22 @@
+D:\My Projects\DijkstrasAlgorithm\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+D:\My Projects\DijkstrasAlgorithm\UnitTests\bin\Debug\UnitTests.dll
+D:\My Projects\DijkstrasAlgorithm\UnitTests\bin\Debug\UnitTests.pdb
+D:\My Projects\DijkstrasAlgorithm\UnitTests\bin\Debug\Entities.dll
+D:\My Projects\DijkstrasAlgorithm\UnitTests\bin\Debug\Services.dll
+D:\My Projects\DijkstrasAlgorithm\UnitTests\bin\Debug\Entities.pdb
+D:\My Projects\DijkstrasAlgorithm\UnitTests\bin\Debug\Services.pdb
+D:\My Projects\DijkstrasAlgorithm\UnitTests\bin\Debug\Services_Accessor.dll
+D:\My Projects\DijkstrasAlgorithm\UnitTests\bin\Debug\Services_Accessor.pdb
+D:\My Projects\DijkstrasAlgorithm\UnitTests\obj\Debug\UnitTests.dll
+D:\My Projects\DijkstrasAlgorithm\UnitTests\obj\Debug\UnitTests.pdb
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\UnitTests\bin\Debug\UnitTests.dll
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\UnitTests\bin\Debug\Entities.dll
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\UnitTests\bin\Debug\Services.dll
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\UnitTests\bin\Debug\Entities.pdb
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\UnitTests\bin\Debug\Services.pdb
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\UnitTests\bin\Debug\Services_Accessor.dll
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\UnitTests\bin\Debug\Services_Accessor.pdb
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\Omar\Desktop\DijkstrasAlgorithm\UnitTests\obj\Debug\UnitTests.pdb
