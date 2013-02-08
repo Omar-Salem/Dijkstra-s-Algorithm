@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="070bb3f3-6f96-42e2-9ca7-5868e3927eeb" name="Omar@OMAR-PC 2013-02-08 20:23:54" runUser="Omar-PC\Omar" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="a4d1e543-9071-49d0-9d0f-9bb2feb37e93">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Omar_OMAR-PC 2013-02-08 20_23_54">
+      <DeploymentItem filename="D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Services\bin\Debug\Services.dll" />
+      <DeploymentItem filename="D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Entities\bin\Debug\Entities.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-02-08T20:23:54.3267877+02:00" queuing="2013-02-08T20:23:54.8718189+02:00" start="2013-02-08T20:23:54.9418229+02:00" finish="2013-02-08T20:24:07.0795171+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreateTreeTest" storage="d:\git\dijkstra-s-algorithm\dijkstrasalgorithm\unittests\bin\debug\unittests.dll" id="5d88df84-0305-fd3f-524f-4e3b272dc83c">
+      <Execution id="c51d4c3b-34e1-4def-b450-2c692ba47be6" />
+      <TestMethod codeBase="D:/Git/Dijkstra-s-Algorithm/DijkstrasAlgorithm/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.ShortestPathTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateTreeTest" />
+    </UnitTest>
+    <UnitTest name="GetShortestPathTest" storage="d:\git\dijkstra-s-algorithm\dijkstrasalgorithm\unittests\bin\debug\unittests.dll" id="2435bbb8-1803-18b7-8506-256abccc29a0">
+      <Execution id="aadaa91d-0b73-4ace-bce6-48e591cd282b" />
+      <TestMethod codeBase="D:/Git/Dijkstra-s-Algorithm/DijkstrasAlgorithm/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.ShortestPathTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetShortestPathTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="2435bbb8-1803-18b7-8506-256abccc29a0" executionId="aadaa91d-0b73-4ace-bce6-48e591cd282b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5d88df84-0305-fd3f-524f-4e3b272dc83c" executionId="c51d4c3b-34e1-4def-b450-2c692ba47be6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="aadaa91d-0b73-4ace-bce6-48e591cd282b" testId="2435bbb8-1803-18b7-8506-256abccc29a0" testName="GetShortestPathTest" computerName="OMAR-PC" duration="00:00:11.1241318" startTime="2013-02-08T20:23:54.9618240+02:00" endTime="2013-02-08T20:24:06.6514926+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aadaa91d-0b73-4ace-bce6-48e591cd282b">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method UnitTests.ShortestPathTest.GetShortestPathTest threw exception: 
+System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.</Message>
+          <StackTrace>    at System.Collections.Generic.List`1.set_Capacity(Int32 value)
+   at System.Collections.Generic.List`1.EnsureCapacity(Int32 min)
+   at System.Collections.Generic.List`1.Add(T item)
+   at Services.ShortestPath.GetPathRecursive(String source, Node node, List`1 edges, Int32 level) in D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Services\ShortestPath.cs:line 165
+   at Services.ShortestPath.GetPathRecursive(String source, Node node, List`1 edges, Int32 level) in D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Services\ShortestPath.cs:line 175
+   at Services.ShortestPath.GetPath(String source, Node node) in D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Services\ShortestPath.cs:line 145
+   at Services.ShortestPath.Services.IShortestPath.GetShortestPath(String source, String destination) in D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Services\ShortestPath.cs:line 39
+   at UnitTests.ShortestPathTest.GetShortestPathTest() in D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\UnitTests\ShortestPathTest.cs:line 71
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c51d4c3b-34e1-4def-b450-2c692ba47be6" testId="5d88df84-0305-fd3f-524f-4e3b272dc83c" testName="CreateTreeTest" computerName="OMAR-PC" duration="00:00:00.0038210" startTime="2013-02-08T20:24:06.6534927+02:00" endTime="2013-02-08T20:24:06.6604931+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c51d4c3b-34e1-4def-b450-2c692ba47be6">
+    </UnitTestResult>
+  </Results>
+</TestRun>

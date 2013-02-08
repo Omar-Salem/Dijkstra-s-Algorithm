@@ -8,7 +8,7 @@ namespace Services
     {
         #region Member Variables
 
-        readonly Dictionary<string, Node> _matrix; 
+        readonly Dictionary<string, Node> _matrix;
 
         #endregion
 
@@ -17,13 +17,13 @@ namespace Services
         public ShortestPath(IEnumerable<Edge> graph)
         {
             _matrix = CreateMatrix(graph);
-        } 
+        }
 
         #endregion
 
         #region Public Methods
 
-        IEnumerable<Edge> IShortestPath.GetShortestPath(string source, string destination)
+        IList<List<Edge>> IShortestPath.GetShortestPath(string source, string destination)
         {
             var visited = new HashSet<Node> { _matrix[source] };
             _matrix[source].CostFromSource = 0;
@@ -36,7 +36,11 @@ namespace Services
                 visited.Add(minimumNode);
             }
 
-            return GetPath(source, minimumNode);
+            var edges = new List<List<Edge>>();
+            edges.Add(new List<Edge>());
+            GetPaths(source, minimumNode, edges, edges.Count - 1);
+
+            return edges;
         }
 
         #endregion
@@ -114,7 +118,7 @@ namespace Services
 
         private void RelaxNeighboringNodes(Node currentNode, IEnumerable<Node> unVisitedNeighbors)
         {
-            foreach (var neighbor in unVisitedNeighbors)
+            foreach (Node neighbor in unVisitedNeighbors)
             {
                 int? newCost = currentNode.Neighbors[neighbor.Label] + currentNode.CostFromSource;
 
@@ -123,36 +127,50 @@ namespace Services
                     if (newCost < neighbor.CostFromSource)
                     {
                         neighbor.CostFromSource = newCost;
-                        neighbor.Parent = currentNode;
+                        neighbor.Parents = new HashSet<Node> { currentNode };
+                    }
+                    else if (newCost == neighbor.CostFromSource && !neighbor.Parents.Contains(currentNode))//in case of tie
+                    {
+                        neighbor.Parents.Add(currentNode);
                     }
                 }
                 else
                 {
                     neighbor.CostFromSource = newCost;
-                    neighbor.Parent = currentNode;
+                    neighbor.Parents = new HashSet<Node> { currentNode };
                 }
             }
         }
 
-        private IEnumerable<Edge> GetPath(string source, Node node)
+        private void GetPaths(string source, Node node, List<List<Edge>> edges, int level)
         {
-            var edges = new List<Edge>();
-
-            while (node.Label != source)
+            if (node.Parents == null)
             {
-                var e = new Edge
-                {
-                    Start = node.Parent.Label,
-                    End = node.Label,
-                    Cost = _matrix[node.Parent.Label].Neighbors[node.Label]
-                };
-
-                edges.Add(e);
-
-                node = node.Parent;
+                return;
             }
 
-            return edges;
+            int i = 0;
+            List<Edge> routeCopy = new List<Edge>(edges[level]);//make a copy of the current route
+
+            foreach (Node originNode in node.Parents)
+            {
+                if (i > 0)//only branch after first edge, as first edge is added to default route
+                {
+                    edges.Add(routeCopy);
+                    level++;
+                }
+
+                var edge = new Edge
+                {
+                    Start = originNode.Label,
+                    End = node.Label,
+                    Cost = _matrix[originNode.Label].Neighbors[node.Label]
+                };
+
+                edges[level].Add(edge);
+                GetPaths(source, originNode, edges, level);
+                i++;
+            }
         }
 
         #endregion

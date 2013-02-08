@@ -12,3 +12,10 @@ C:\Users\Omar\Desktop\DijkstrasAlgorithm\Services\bin\Debug\Entities.pdb
 C:\Users\Omar\Desktop\DijkstrasAlgorithm\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
 C:\Users\Omar\Desktop\DijkstrasAlgorithm\Services\obj\Debug\Services.dll
 C:\Users\Omar\Desktop\DijkstrasAlgorithm\Services\obj\Debug\Services.pdb
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Services\bin\Debug\Services.dll
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Services\bin\Debug\Services.pdb
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Services\bin\Debug\Entities.dll
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Services\bin\Debug\Entities.pdb
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Services\obj\Debug\Services.dll
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Services\obj\Debug\Services.pdb

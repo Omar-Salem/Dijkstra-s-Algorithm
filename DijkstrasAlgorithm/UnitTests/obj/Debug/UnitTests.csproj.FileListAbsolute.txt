@@ -20,3 +20,14 @@ C:\Users\Omar\Desktop\DijkstrasAlgorithm\UnitTests\bin\Debug\Services_Accessor.p
 C:\Users\Omar\Desktop\DijkstrasAlgorithm\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
 C:\Users\Omar\Desktop\DijkstrasAlgorithm\UnitTests\obj\Debug\UnitTests.dll
 C:\Users\Omar\Desktop\DijkstrasAlgorithm\UnitTests\obj\Debug\UnitTests.pdb
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\UnitTests\bin\Debug\UnitTests.dll
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\UnitTests\bin\Debug\UnitTests.pdb
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\UnitTests\bin\Debug\Entities.dll
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\UnitTests\bin\Debug\Services.dll
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\UnitTests\bin\Debug\Entities.pdb
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\UnitTests\bin\Debug\Services.pdb
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\UnitTests\bin\Debug\Services_Accessor.dll
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\UnitTests\bin\Debug\Services_Accessor.pdb
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\UnitTests\obj\Debug\UnitTests.dll
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\UnitTests\obj\Debug\UnitTests.pdb

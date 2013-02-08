@@ -7,10 +7,16 @@ namespace Entities
 {
     public class Node
     {
+        #region Public Properties
+
         public string Label { get; set; }
         public int? CostFromSource { get; set; }
         public Dictionary<string, int> Neighbors { get; set; }
-        public Node Parent { get; set; }
+        public HashSet<Node> Parents { get; set; } 
+
+        #endregion
+
+        #region Public Methods
 
         public override int GetHashCode()
         {
@@ -28,5 +34,7 @@ namespace Entities
 
             return false;
         }
+        
+        #endregion
     }
 }

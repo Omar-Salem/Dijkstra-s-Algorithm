@@ -8,3 +8,8 @@ C:\Users\Omar\Desktop\DijkstrasAlgorithm\Entities\bin\Debug\Entities.pdb
 C:\Users\Omar\Desktop\DijkstrasAlgorithm\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
 C:\Users\Omar\Desktop\DijkstrasAlgorithm\Entities\obj\Debug\Entities.dll
 C:\Users\Omar\Desktop\DijkstrasAlgorithm\Entities\obj\Debug\Entities.pdb
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Entities\bin\Debug\Entities.dll
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Entities\bin\Debug\Entities.pdb
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Entities\obj\Debug\Entities.dll
+D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Entities\obj\Debug\Entities.pdb

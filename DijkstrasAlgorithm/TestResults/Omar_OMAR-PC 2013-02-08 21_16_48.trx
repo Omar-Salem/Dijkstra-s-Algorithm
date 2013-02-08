@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d311cbd2-1bb8-48ee-9b56-86b4ff7740f4" name="Omar@OMAR-PC 2013-02-08 21:16:48" runUser="Omar-PC\Omar" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="a4d1e543-9071-49d0-9d0f-9bb2feb37e93">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="Omar_OMAR-PC 2013-02-08 21_16_48">
+      <DeploymentItem filename="D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Services\bin\Debug\Services.dll" />
+      <DeploymentItem filename="D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Entities\bin\Debug\Entities.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-02-08T21:16:48.7933568+02:00" queuing="2013-02-08T21:16:48.8863621+02:00" start="2013-02-08T21:16:48.8973627+02:00" finish="2013-02-08T21:16:49.2553832+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetShortestPathTest" storage="d:\git\dijkstra-s-algorithm\dijkstrasalgorithm\unittests\bin\debug\unittests.dll" id="2435bbb8-1803-18b7-8506-256abccc29a0">
+      <Execution id="ab6179c0-5f12-46fd-ad98-d3eefc16d835" />
+      <TestMethod codeBase="D:/Git/Dijkstra-s-Algorithm/DijkstrasAlgorithm/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.ShortestPathTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetShortestPathTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="2435bbb8-1803-18b7-8506-256abccc29a0" executionId="ab6179c0-5f12-46fd-ad98-d3eefc16d835" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ab6179c0-5f12-46fd-ad98-d3eefc16d835" testId="2435bbb8-1803-18b7-8506-256abccc29a0" testName="GetShortestPathTest" computerName="OMAR-PC" duration="00:00:00.0337111" startTime="2013-02-08T21:16:48.9163638+02:00" endTime="2013-02-08T21:16:49.2343820+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab6179c0-5f12-46fd-ad98-d3eefc16d835">
+    </UnitTestResult>
+  </Results>
+</TestRun>

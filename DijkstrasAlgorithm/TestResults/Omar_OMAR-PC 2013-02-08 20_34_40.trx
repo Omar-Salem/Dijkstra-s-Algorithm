@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="947cc594-78b4-4d58-a461-d07addf9875a" name="Omar@OMAR-PC 2013-02-08 20:34:40" runUser="Omar-PC\Omar" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="a4d1e543-9071-49d0-9d0f-9bb2feb37e93">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="Omar_OMAR-PC 2013-02-08 20_34_40">
+      <DeploymentItem filename="D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Services\bin\Debug\Services.dll" />
+      <DeploymentItem filename="D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Entities\bin\Debug\Entities.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-02-08T20:34:40.3707393+02:00" queuing="2013-02-08T20:34:42.1878432+02:00" start="2013-02-08T20:34:42.5068615+02:00" finish="2013-02-08T20:35:17.3848564+02:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="2" executed="2" passed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="OMAR-PC" outcome="Error" timestamp="2013-02-08T20:35:17.3818562+02:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreateTreeTest" storage="d:\git\dijkstra-s-algorithm\dijkstrasalgorithm\unittests\bin\debug\unittests.dll" id="5d88df84-0305-fd3f-524f-4e3b272dc83c">
+      <Execution id="9d3ca153-dd02-4cb6-af27-829f139353de" />
+      <TestMethod codeBase="D:/Git/Dijkstra-s-Algorithm/DijkstrasAlgorithm/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.ShortestPathTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateTreeTest" />
+    </UnitTest>
+    <UnitTest name="GetShortestPathTest" storage="d:\git\dijkstra-s-algorithm\dijkstrasalgorithm\unittests\bin\debug\unittests.dll" id="2435bbb8-1803-18b7-8506-256abccc29a0">
+      <Execution id="0ac41adf-4155-4851-9810-65d3f4753bec" />
+      <TestMethod codeBase="D:/Git/Dijkstra-s-Algorithm/DijkstrasAlgorithm/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.ShortestPathTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetShortestPathTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="5d88df84-0305-fd3f-524f-4e3b272dc83c" executionId="9d3ca153-dd02-4cb6-af27-829f139353de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2435bbb8-1803-18b7-8506-256abccc29a0" executionId="0ac41adf-4155-4851-9810-65d3f4753bec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9d3ca153-dd02-4cb6-af27-829f139353de" testId="5d88df84-0305-fd3f-524f-4e3b272dc83c" testName="CreateTreeTest" computerName="OMAR-PC" duration="00:00:00.0730403" startTime="2013-02-08T20:34:42.7638762+02:00" endTime="2013-02-08T20:34:44.3499669+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9d3ca153-dd02-4cb6-af27-829f139353de">
+    </UnitTestResult>
+    <UnitTestResult executionId="0ac41adf-4155-4851-9810-65d3f4753bec" testId="2435bbb8-1803-18b7-8506-256abccc29a0" testName="GetShortestPathTest" computerName="OMAR-PC" duration="00:00:32.9658856" startTime="2013-02-08T20:34:44.4189708+02:00" endTime="2013-02-08T20:35:17.3848564+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0ac41adf-4155-4851-9810-65d3f4753bec">
+    </UnitTestResult>
+  </Results>
+</TestRun>

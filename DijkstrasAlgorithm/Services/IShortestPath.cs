@@ -8,6 +8,6 @@ namespace Services
 {
     public interface IShortestPath
     {
-        IEnumerable<Edge> GetShortestPath(string source, string destination);
+        IList<List<Edge>> GetShortestPath(string source, string destination);
     }
 }

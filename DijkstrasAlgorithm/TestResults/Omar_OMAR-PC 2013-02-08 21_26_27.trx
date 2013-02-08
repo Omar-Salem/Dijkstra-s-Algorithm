@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="184dfba3-d693-4460-9993-f4237904bee0" name="Omar@OMAR-PC 2013-02-08 21:26:27" runUser="Omar-PC\Omar" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="a4d1e543-9071-49d0-9d0f-9bb2feb37e93">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Omar_OMAR-PC 2013-02-08 21_26_27">
+      <DeploymentItem filename="D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Services\bin\Debug\Services.dll" />
+      <DeploymentItem filename="D:\Git\Dijkstra-s-Algorithm\DijkstrasAlgorithm\Entities\bin\Debug\Entities.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-02-08T21:26:27.3034457+02:00" queuing="2013-02-08T21:26:27.3784500+02:00" start="2013-02-08T21:26:27.4054515+02:00" finish="2013-02-08T21:26:27.8154750+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetShortestPath_ScenarioATest" storage="d:\git\dijkstra-s-algorithm\dijkstrasalgorithm\unittests\bin\debug\unittests.dll" id="a7a6c057-d83e-5d2e-807a-ae938a743557">
+      <Execution id="ed649ec5-c65b-4863-bef5-ab9abba3120f" />
+      <TestMethod codeBase="D:/Git/Dijkstra-s-Algorithm/DijkstrasAlgorithm/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.ShortestPathTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetShortestPath_ScenarioATest" />
+    </UnitTest>
+    <UnitTest name="CreateTreeTest" storage="d:\git\dijkstra-s-algorithm\dijkstrasalgorithm\unittests\bin\debug\unittests.dll" id="5d88df84-0305-fd3f-524f-4e3b272dc83c">
+      <Execution id="1beeccfc-66f3-4fb5-9c8a-9f316a1d004d" />
+      <TestMethod codeBase="D:/Git/Dijkstra-s-Algorithm/DijkstrasAlgorithm/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.ShortestPathTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateTreeTest" />
+    </UnitTest>
+    <UnitTest name="GetShortestPath_ScenarioBTest" storage="d:\git\dijkstra-s-algorithm\dijkstrasalgorithm\unittests\bin\debug\unittests.dll" id="92e910a0-ef07-e6c6-1c18-b3dd64082bba">
+      <Execution id="2492d12b-0634-4d36-99b5-3990681143b4" />
+      <TestMethod codeBase="D:/Git/Dijkstra-s-Algorithm/DijkstrasAlgorithm/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.ShortestPathTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetShortestPath_ScenarioBTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="5d88df84-0305-fd3f-524f-4e3b272dc83c" executionId="1beeccfc-66f3-4fb5-9c8a-9f316a1d004d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92e910a0-ef07-e6c6-1c18-b3dd64082bba" executionId="2492d12b-0634-4d36-99b5-3990681143b4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a7a6c057-d83e-5d2e-807a-ae938a743557" executionId="ed649ec5-c65b-4863-bef5-ab9abba3120f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="1beeccfc-66f3-4fb5-9c8a-9f316a1d004d" testId="5d88df84-0305-fd3f-524f-4e3b272dc83c" testName="CreateTreeTest" computerName="OMAR-PC" duration="00:00:00.0306865" startTime="2013-02-08T21:26:27.4504541+02:00" endTime="2013-02-08T21:26:27.7364705+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1beeccfc-66f3-4fb5-9c8a-9f316a1d004d">
+    </UnitTestResult>
+    <UnitTestResult executionId="2492d12b-0634-4d36-99b5-3990681143b4" testId="92e910a0-ef07-e6c6-1c18-b3dd64082bba" testName="GetShortestPath_ScenarioBTest" computerName="OMAR-PC" duration="00:00:00.0131592" startTime="2013-02-08T21:26:27.7494712+02:00" endTime="2013-02-08T21:26:27.7724725+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2492d12b-0634-4d36-99b5-3990681143b4">
+    </UnitTestResult>
+    <UnitTestResult executionId="ed649ec5-c65b-4863-bef5-ab9abba3120f" testId="a7a6c057-d83e-5d2e-807a-ae938a743557" testName="GetShortestPath_ScenarioATest" computerName="OMAR-PC" duration="00:00:00.0027647" startTime="2013-02-08T21:26:27.7784729+02:00" endTime="2013-02-08T21:26:27.7874734+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed649ec5-c65b-4863-bef5-ab9abba3120f">
+    </UnitTestResult>
+  </Results>
+</TestRun>
