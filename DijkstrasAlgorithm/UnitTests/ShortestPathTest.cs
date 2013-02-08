@@ -102,5 +102,59 @@ namespace UnitTests
             Assert.AreEqual(2, path[0].Count);
             Assert.AreEqual(101, path[0].Sum(e => e.Cost));
         }
+
+        [TestMethod()]
+        public void GetMinimumNodeTest()
+        {
+            //Arrange       
+            IEnumerable<Edge> edges = new Edge[4]
+            {
+                new Edge{Start="a",End="b",Cost=1},
+                new Edge{Start="b",End="c",Cost=1000},
+                new Edge{Start="c",End="d",Cost=1},
+                new Edge{Start="d",End="a",Cost=100},
+            };
+            PrivateObject param0 = new PrivateObject(edges); ;
+            ShortestPath_Accessor target = new ShortestPath_Accessor(param0);
+            HashSet<Node> visited = new HashSet<Node>(); ;
+            Node expected = null;
+            Node actual = target.GetMinimumNode(visited);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void GetPathsTest()
+        {
+            PrivateObject param0 = null;
+            ShortestPath_Accessor target = new ShortestPath_Accessor(param0);
+            string source = string.Empty;
+            Node node = null;
+            List<List<Edge>> edges = null;
+            int level = 0;
+            target.GetPaths(source, node, edges, level);
+        }
+
+        [TestMethod()]
+        public void GetUnVisitedNeighborsTest()
+        {
+            PrivateObject param0 = null;
+            ShortestPath_Accessor target = new ShortestPath_Accessor(param0);
+            HashSet<Node> visited = null;
+            Node currentNode = null;
+            IEnumerable<Node> expected = null;
+            IEnumerable<Node> actual;
+            actual = target.GetUnVisitedNeighbors(visited, currentNode);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void RelaxNeighboringNodesTest()
+        {
+            PrivateObject param0 = null;
+            ShortestPath_Accessor target = new ShortestPath_Accessor(param0);
+            Node currentNode = null;
+            IEnumerable<Node> unVisitedNeighbors = null;
+            target.RelaxNeighboringNodes(currentNode, unVisitedNeighbors);
+        }
     }
 }

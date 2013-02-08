@@ -98,11 +98,11 @@ namespace Services
                 {
                     RelaxNeighboringNodes(currentNode, unVisitedNeighbors);
 
-                    Node minimumNodeTillNow = unVisitedNeighbors.Aggregate((a, b) => a.CostFromSource < b.CostFromSource ? a : b);
+                    Node minimumNodeEndingHere = unVisitedNeighbors.Aggregate((a, b) => a.CostFromSource < b.CostFromSource ? a : b);
 
-                    if (!minimumNodeSoFar.CostFromSource.HasValue || minimumNodeSoFar.CostFromSource > minimumNodeTillNow.CostFromSource)
+                    if (!minimumNodeSoFar.CostFromSource.HasValue || minimumNodeSoFar.CostFromSource > minimumNodeEndingHere.CostFromSource)
                     {
-                        minimumNodeSoFar = minimumNodeTillNow;
+                        minimumNodeSoFar = minimumNodeEndingHere;
                     }
                 }
             }
