@@ -85,7 +85,6 @@ namespace Services
         private Node GetMinimumNode(HashSet<Node> visited)
         {
             Node minimumNodeSoFar = new Node();
-            int? minimumCostSoFar = minimumNodeSoFar.CostFromSource;
 
             foreach (Node currentNode in visited)
             {
@@ -97,10 +96,9 @@ namespace Services
 
                     Node minimumNodeTillNow = unVisitedNeighbors.Aggregate((a, b) => a.CostFromSource < b.CostFromSource ? a : b);
 
-                    if (!minimumCostSoFar.HasValue || minimumCostSoFar > minimumNodeTillNow.CostFromSource)
+                    if (!minimumNodeSoFar.CostFromSource.HasValue || minimumNodeSoFar.CostFromSource > minimumNodeTillNow.CostFromSource)
                     {
                         minimumNodeSoFar = minimumNodeTillNow;
-                        minimumCostSoFar = minimumNodeSoFar.CostFromSource;
                     }
                 }
             }
@@ -136,22 +134,22 @@ namespace Services
             }
         }
 
-        private IEnumerable<Edge> GetPath(string source, Node minimumNode)
+        private IEnumerable<Edge> GetPath(string source, Node node)
         {
             var edges = new List<Edge>();
 
-            while (minimumNode.Label != source)
+            while (node.Label != source)
             {
                 var e = new Edge
                 {
-                    Start = minimumNode.Parent.Label,
-                    End = minimumNode.Label,
-                    Cost = _matrix[minimumNode.Parent.Label].Neighbors[minimumNode.Label]
+                    Start = node.Parent.Label,
+                    End = node.Label,
+                    Cost = _matrix[node.Parent.Label].Neighbors[node.Label]
                 };
 
                 edges.Add(e);
 
-                minimumNode = minimumNode.Parent;
+                node = node.Parent;
             }
 
             return edges;
