@@ -8,7 +8,7 @@ namespace Services
     {
         #region Member Variables
 
-        readonly Dictionary<string, Node> _matrix;
+        Dictionary<string, Node> _matrix;
 
         #endregion
 
@@ -41,6 +41,22 @@ namespace Services
             GetPaths(source, minimumNode, edges, edges.Count - 1);
 
             return edges;
+        }
+
+        #endregion
+
+        #region Public Properties
+
+        Dictionary<string, Node> IShortestPath.Matrix
+        {
+            get
+            {
+                return _matrix;
+            }
+            set
+            {
+                _matrix = value; ;
+            }
         }
 
         #endregion
