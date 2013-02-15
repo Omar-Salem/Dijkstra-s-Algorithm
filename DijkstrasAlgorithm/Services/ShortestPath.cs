@@ -29,14 +29,20 @@ namespace Services
             _matrix[source].CostFromSource = 0;
             Node destinationNode = _matrix[destination];
             Node minimumNode = new Node();
+            var edges = new List<List<Edge>>();
 
             while (!visited.Contains(destinationNode))
             {
                 minimumNode = GetMinimumNode(visited);
+
+                if (minimumNode.Label == null)//No Path exists
+                {
+                    return edges;
+                }
+
                 visited.Add(minimumNode);
             }
 
-            var edges = new List<List<Edge>>();
             edges.Add(new List<Edge>());
             GetPaths(source, minimumNode, edges, edges.Count - 1);
 
