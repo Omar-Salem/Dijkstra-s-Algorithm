@@ -54,9 +54,6 @@
     <Compile Include="ShortestPathTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Shadow Include="Test References\Services.accessor" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Entities\Entities.csproj">
       <Project>{85200D7B-6C75-47D0-9BC2-E8DAD9186605}</Project>
       <Name>Entities</Name>
@@ -65,6 +62,9 @@
       <Project>{978D3C56-8699-4CB6-BF5F-F7091AE9194C}</Project>
       <Name>Services</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Shadow Include="Test References\Services.accessor" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

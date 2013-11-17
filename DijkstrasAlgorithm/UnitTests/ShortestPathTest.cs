@@ -104,6 +104,27 @@ namespace UnitTests
         }
 
         [TestMethod()]
+        public void GetShortestPath_NoPathTest()
+        {
+            //Arrange
+            IEnumerable<Edge> edges = new Edge[5]
+            {
+                new Edge{Start="a",End="b",Cost=1},
+                new Edge{Start="b",End="c",Cost=1000},
+                new Edge{Start="c",End="d",Cost=1},
+                new Edge{Start="d",End="a",Cost=100},
+                new Edge{Start="x",End="x",Cost=100},
+            };
+            IShortestPath targt = new ShortestPath(edges);
+
+            //Act
+            IList<List<Edge>> path = targt.GetShortestPath("a", "x");
+
+            //Assert
+            Assert.AreEqual(0, path.Count);
+        }
+
+        [TestMethod()]
         public void GetMinimumNodeTest()
         {
             //Arrange       
@@ -116,9 +137,13 @@ namespace UnitTests
             };
             PrivateObject param0 = new PrivateObject(edges); ;
             ShortestPath_Accessor target = new ShortestPath_Accessor(param0);
-            HashSet<Node> visited = new HashSet<Node>(); ;
+            target._visitedNodes = new HashSet<Node>(); ;
             Node expected = null;
-            Node actual = target.GetMinimumNode(visited);
+
+            //Act
+            Node actual = target.GetMinimumNode();
+
+            //Assert
             Assert.AreEqual(expected, actual);
         }
 
@@ -139,11 +164,11 @@ namespace UnitTests
         {
             PrivateObject param0 = null;
             ShortestPath_Accessor target = new ShortestPath_Accessor(param0);
-            HashSet<Node> visited = null;
+            target._visitedNodes = null;
             Node currentNode = null;
             IEnumerable<Node> expected = null;
             IEnumerable<Node> actual;
-            actual = target.GetUnVisitedNeighbors(visited, currentNode);
+            actual = target.GetUnVisitedNeighbors(currentNode);
             Assert.AreEqual(expected, actual);
         }
 

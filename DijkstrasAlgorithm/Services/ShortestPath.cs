@@ -9,6 +9,7 @@ namespace Services
         #region Member Variables
 
         Dictionary<string, Node> _matrix;
+        HashSet<Node> _visitedNodes;
 
         #endregion
 
@@ -17,6 +18,7 @@ namespace Services
         public ShortestPath(IEnumerable<Edge> graph)
         {
             _matrix = CreateMatrix(graph);
+            _visitedNodes = new HashSet<Node>();
         }
 
         #endregion
@@ -25,22 +27,22 @@ namespace Services
 
         IList<List<Edge>> IShortestPath.GetShortestPath(string source, string destination)
         {
-            var visited = new HashSet<Node> { _matrix[source] };
             _matrix[source].CostFromSource = 0;
+            _visitedNodes.Add(_matrix[source]);
             Node destinationNode = _matrix[destination];
             Node minimumNode = new Node();
             var edges = new List<List<Edge>>();
 
-            while (!visited.Contains(destinationNode))
+            while (!_visitedNodes.Contains(destinationNode))
             {
-                minimumNode = GetMinimumNode(visited);
+                minimumNode = GetMinimumNode();
 
                 if (minimumNode.Label == null)//No Path exists
                 {
                     return edges;
                 }
 
-                visited.Add(minimumNode);
+                _visitedNodes.Add(minimumNode);
             }
 
             edges.Add(new List<Edge>());
@@ -108,13 +110,13 @@ namespace Services
             return matrix;
         }
 
-        private Node GetMinimumNode(HashSet<Node> visited)
+        private Node GetMinimumNode()
         {
-            Node minimumNodeSoFar = new Node();
+            var minimumNodeSoFar = new Node();
 
-            foreach (Node currentNode in visited)
+            foreach (Node currentNode in _visitedNodes)
             {
-                IEnumerable<Node> unVisitedNeighbors = GetUnVisitedNeighbors(visited, currentNode);
+                IEnumerable<Node> unVisitedNeighbors = GetUnVisitedNeighbors(currentNode);
 
                 if (unVisitedNeighbors.Any())
                 {
@@ -132,9 +134,11 @@ namespace Services
             return minimumNodeSoFar;
         }
 
-        private IEnumerable<Node> GetUnVisitedNeighbors(HashSet<Node> visited, Node currentNode)
+        private IEnumerable<Node> GetUnVisitedNeighbors(Node currentNode)
         {
-            IEnumerable<Node> unVisitedNeighbors = currentNode.Neighbors.Where(n => !visited.Contains(new Node { Label = n.Key })).Select(n => _matrix[n.Key]);
+            IEnumerable<Node> unVisitedNeighbors = currentNode.Neighbors
+                .Where(n => !_visitedNodes.Contains(new Node { Label = n.Key }))
+                .Select(n => _matrix[n.Key]);
             return unVisitedNeighbors;
         }
 
@@ -142,7 +146,7 @@ namespace Services
         {
             foreach (Node neighbor in unVisitedNeighbors)
             {
-                int? newCost = currentNode.Neighbors[neighbor.Label] + currentNode.CostFromSource;
+                int? newCost = currentNode.CostFromSource + currentNode.Neighbors[neighbor.Label];
 
                 if (neighbor.CostFromSource.HasValue)
                 {
@@ -164,9 +168,9 @@ namespace Services
             }
         }
 
-        private void GetPaths(string source, Node node, List<List<Edge>> edges, int level)
+        private void GetPaths(string source, Node destination, List<List<Edge>> edges, int level)
         {
-            if (node.Parents == null)
+            if (destination.Parents == null)
             {
                 return;
             }
@@ -174,7 +178,7 @@ namespace Services
             int i = 0;
             List<Edge> routeCopy = new List<Edge>(edges[level]);//make a copy of the current route
 
-            foreach (Node originNode in node.Parents)
+            foreach (Node originNode in destination.Parents)
             {
                 if (i > 0)//only branch after first edge, as first edge is added to default route
                 {
@@ -185,8 +189,8 @@ namespace Services
                 var edge = new Edge
                 {
                     Start = originNode.Label,
-                    End = node.Label,
-                    Cost = _matrix[originNode.Label].Neighbors[node.Label]
+                    End = destination.Label,
+                    Cost = _matrix[originNode.Label].Neighbors[destination.Label]
                 };
 
                 edges[level].Add(edge);
